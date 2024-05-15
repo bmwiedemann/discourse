@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Jobs::EnqueueDigestEmails do
-  describe "#target_users" do
+  describe "#target_user_ids" do
     context "with disabled digests" do
       before { SiteSetting.default_email_digest_frequency = 0 }
       let!(:user_no_digests) do
